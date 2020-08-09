@@ -26,12 +26,12 @@ public class OrderController {
         order.setTransactionDate(new Date());
 
         OrderResponse order2 = new OrderResponse();
-        order.setAccountId("3223424324");
-        order.setOrderId("21");
-        order.setStatus("PENDING");
-        order.setTotalAmount(30D);
-        order.setTotalTax(10D);
-        order.setTransactionDate(new Date());
+        order2.setAccountId("3223424324");
+        order2.setOrderId("21");
+        order2.setStatus("PENDING");
+        order2.setTotalAmount(30D);
+        order2.setTotalTax(10D);
+        order2.setTransactionDate(new Date());
 
         orderList.add(order);
         orderList.add(order2);
