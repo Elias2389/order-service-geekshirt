@@ -44,8 +44,14 @@ public class OrderController {
         return new ResponseEntity<>(orderList, HttpStatus.OK);
     }
 
+    @GetMapping(value = "order/generated/{orderId}")
+    public ResponseEntity<OrderResponse> findByGeneratedId(@PathVariable long orderId) {
+        OrderResponse order = service.findById(orderId);
+        return new ResponseEntity<>(order, HttpStatus.OK);
+    }
+
     @GetMapping(value = "order/{orderId}")
-    public ResponseEntity<OrderResponse> findById(@PathVariable("orderId") String orderId ) {
+    public ResponseEntity<OrderResponse> findById(@PathVariable("orderId") Long orderId ) {
         return new ResponseEntity<>(service.findById(orderId), HttpStatus.OK);
     }
 

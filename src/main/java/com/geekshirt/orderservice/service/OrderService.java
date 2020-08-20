@@ -17,7 +17,7 @@ public class OrderService {
     @Autowired
     CustomerClientService customerClient;
 
-    public OrderResponse findById(String orderId ) {
+    public OrderResponse findById(Long orderId ) {
         return null;
     }
 
